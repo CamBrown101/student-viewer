@@ -38,7 +38,6 @@ app.use('/api/users', usersRoutes(pool));
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
 app.get('/', (req, res) => {
-  const templateVars = { test: '123' };
   res.render('index', templateVars);
 });
 
